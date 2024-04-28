@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Assignment</string>
+    <string-array name="Country">
+        <item> Nepal (Everest And Flag only)  </item>
+        <item> India (No, buddha was not born here)</item>
+        <item> USA (Freedom Country with Gunz) </item>
+        <item> Australia (Part Time Nepal) </item>
+        <item> Canada (Part Time Punjab) </item>
+        <item> China (Ching Chong) </item>
+        <item> Japan (Ching Chong part 2)</item>
+        <item> HongKong (Wannabe Ching Chong)</item>
+        <item> Taiwan (Ching Chong that Ching Chong wants to ching chong)</item>
+        <item> Israel (Juz)</item>
+        <item> Germany (1942) </item>
+        <item> UK (No more united) </item>
+        <item> Malaysia (ching chong with mental ilness) </item>
+        <item> Sweden (Poodipi) </item>
+        <item> Switzerland (Wannabe Nepal - Prachanda) </item>
+        <item> Pakistan (Florida of the world) </item>
+        <item> South Africa (Where is the water?) </item>
+        <item> Sri Lanka (Are you still not underwater?) </item>
+        <item> France (Earliest to fall - 1940) </item>
+        <item>Romania (Andrew Tatte) </item>
+
+    </string-array>
 </resources>

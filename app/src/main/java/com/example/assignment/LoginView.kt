@@ -47,7 +47,7 @@ class LoginView : AppCompatActivity() {
         val userTypeAutocompleteTextView: AutoCompleteTextView = findViewById(R.id.userTypeAutocompleteTextView)
 
 
-        val userTypeChoices = arrayOf("Business", "Consumer")
+        val userTypeChoices = arrayOf("Business", "Consumer", "business", "consumer")
 
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, userTypeChoices)
@@ -59,6 +59,10 @@ class LoginView : AppCompatActivity() {
             if (passwordField.text.length < 8){
                 Snackbar.make(userNameField, "The password must be longer than 8 Characters", Snackbar.LENGTH_LONG).show()
             }
+            if (userNameField.text.length <1){
+                Toast.makeText(this, "The username field can't be empty", Snackbar.LENGTH_LONG).show()
+            }
+
             Toast.makeText(this, "Any of the fields cannot be empty", Toast.LENGTH_LONG).show()
         }
 
