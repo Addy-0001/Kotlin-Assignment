@@ -3,7 +3,6 @@ package com.example.assignment
 import android.os.Bundle
 import android.widget.AutoCompleteTextView
 import android.widget.Button
-import android.widget.DatePicker
 import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
@@ -47,13 +46,13 @@ class LoginView : AppCompatActivity() {
 
         val userTypeAutocompleteTextView: AutoCompleteTextView = findViewById(R.id.userTypeAutocompleteTextView)
 
-        // Define the array of choices
+
         val userTypeChoices = arrayOf("Business", "Consumer")
 
-        // Create an ArrayAdapter using the string array and a default spinner layout
+
         val adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, userTypeChoices)
 
-        // Set the ArrayAdapter to the AutoCompleteTextView
+
         userTypeAutocompleteTextView.setAdapter(adapter)
 
         signupButton.setOnClickListener{
@@ -94,10 +93,9 @@ class LoginView : AppCompatActivity() {
     }
 
     private fun updateDateInView() {
-        val myFormat = "dd/MM/yyyy" // Format of date to display
+        val myFormat = "dd/MM/yyyy"
         val sdf = SimpleDateFormat(myFormat, Locale.getDefault())
 
-        // Set the formatted date to the EditText field
         dobField.setText(sdf.format(calendar.time))
     }
 }
